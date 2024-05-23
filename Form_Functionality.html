@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>From Functionality</title>
+</head>
+<body> 
+   <form enctype="multipart/form-data" method="post" onSubmit="formHandler(event)">
+        <h2>Registeration Form By Wazhma Hakimi</h2>
+        <table width="100%" heigth="100%">
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" id="name" placeholder="Enter your name here..."></td>
+            </tr>
+            
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" id="gender" name="gender" value="Female">
+                    <label class="label">Female</label>
+                    <input type="radio" id="gender" name="gender" value="Male">
+                    <label class="label">Male</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Bio</label></td>
+                <td><textarea id="bio" cols="30" rows="3" placeholder="Add a few lines about yourself..."></textarea></td>
+            </tr>
+            
+            <tr>
+                <td><label>Languages</label></td>
+                <td>
+                    <input type="checkbox" id="lang" name="lang" value="Pashto">
+                    <label class="label checkbox">Pashto</label>
+                    <input type="checkbox" id="lang" name="lang" value="Dari">
+                    <label class="label checkbox">Dari</label>
+                    <input type="checkbox" id="lang" name="lang" value="English">
+                    <label class="label checkbox">English</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label>Class</label>
+                </td>
+                <td>
+                    <select name="classes" id="classes">
+                        <option value="Web Development">Web Development</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Email Address</label></td>
+                <td><input type="email" id="email" placeholder="Enter your email address here..."></td>
+            </tr>
+
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" id="password" placeholder="Enter your password here..."></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button type="submit"><b>Save</b></button>
+                </td>
+            </tr>
+        </table>
+   </form> 
+
+   <div class="aside">
+        <h2 class="outputTitle">Output</h2>
+        <p id="text">
+            You have not registered yourself!
+        </p>
+
+        <div class="output">
+            <p id="nameResult"></p>
+            <p id="emailResult"></p>
+            <p id="passwordResult"></p>
+            <p id="genderResult"></p>
+            <p id="langResult"></p>
+            <p id="classResult"></p>
+            <p id="bioResult"></p>
+        </div>     
+   </div>
+   
+   <script src="formHandler.js"></script>
+</body>
+</html>
